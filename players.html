@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+<head>
+    <title>Players</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: #0b1f14;
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            background-color: black;
+            padding: 15px;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #00cc66;
+        }
+
+        nav {
+            margin-top: 8px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #00cc66;
+        }
+
+        .container {
+            background-color: #123524;
+            width: 320px;
+            margin: 60px auto;
+            padding: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Intramurals 2025-2026</h1>
+    <nav>
+        <a href="signup.html">Sign Up</a>
+        <a href="teamchecker.html">Team Checker</a>
+        <a href="players.html">Players</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h3>Intramurals Players</h3>
+    <button py-click="Button" class="btn btn-primary">Show Players</button>
+</div> 
+
+<script type="py" src="players.py"></script>
+</body>
+</html>

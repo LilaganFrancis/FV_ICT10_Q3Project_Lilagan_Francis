@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Team Checker</title>
+</head>
+<body style="background-color:#0b1f14; color:white; text-align:center; font-family:Arial;">
+
+<h1>Intramurals 2025-2026</h1>
+
+<form method="POST">
+
+    <p>Registered Online?</p>
+    <input type="radio" name="reg" value="yes"> Yes
+    <input type="radio" name="reg" value="no"> No
+
+    <p>Medical Clearance?</p>
+    <input type="radio" name="med" value="yes"> Yes
+    <input type="radio" name="med" value="no"> No
+
+    <p>Grade:</p>
+    <input type="number" name="grade" min="7" max="10" required>
+
+    <p>Section:</p>
+    <select name="section" required>
+        <option value="Ruby">Ruby</option>
+        <option value="Sapphire">Sapphire</option>
+        <option value="Emerald">Emerald</option>
+        <option value="Jade">Jade</option>
+        <option value="Topaz">Topaz</option>
+    </select>
+
+    <br><br>
+    <button type="submit">Check</button>
+</form>
+
+{% if team %}
+    <h2>{{ team }}</h2>
+    {% if image %}
+        <img src="{{ image }}" width="200">
+    {% endif %}
+{% endif %}
+
+</body>
+</html>
